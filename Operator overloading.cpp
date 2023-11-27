@@ -7,9 +7,9 @@ private:
 public:
     ABC(int abc)
     {
-       m_abc = abc;                                                 // parameterised constructor
+       m_abc = abc;                                         // parameterised constructor
     }
-    ABC operator +(int value);                                      // declared operator function
+    ABC operator +(int value);                             // declared operator function
     
     int getABC() const 
     { 
@@ -25,9 +25,9 @@ ABC ABC::operator +(int value)
 
 int main()
 {
-    ABC a1(6);                                                        // create object and passed argument
+    ABC a1(6);                                               // create object and passed argument
     ABC a2=a1+2;
     
-    std::cout << "I have " << a2.getABC()<<" rupees.\n";                 // display output
+    std::cout << "I have " << a2.getABC()<<" rupees.\n";       // display output
     return 0;
 }
